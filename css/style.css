@@ -1,6 +1,7 @@
 body {
 
-background-color: hsl(335,50%, 50%);
+background-color: hsl(325,60%, 60%);
+
 
 
 }
@@ -8,21 +9,21 @@ background-color: hsl(335,50%, 50%);
 p {
 
 
-color:darkblue
+    color:hsl(241, 71%, 43%)
 
 }
 
 li {
 
 text-align: center;
-color: hsl(10,0% 0%)
+color:hsl(241, 71%, 43%)
 
 }
 
 ul {
 
     text-align: center;
-    color: hsl(10,0% 0%)
+    color:hsl(241, 71%, 43%)
     
     }
 
@@ -31,7 +32,23 @@ ul {
 font-weight: bold;
 font-size:20px ;
 text-align: center;
-
+color:hsl(241, 71%, 43%)
     }
 
-   
+   figcaption {
+
+text-indent: 240px;
+color:hsl(241, 71%, 43%)
+
+
+   }
+
+   h1 {
+
+
+font-weight:bolder;
+
+
+
+
+   }
