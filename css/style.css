@@ -1,7 +1,37 @@
 body {
 
-background-color: darkgreen;
+background-color: hsl(335,50%, 50%);
 
 
 }
 
+p {
+
+
+color:darkblue
+
+}
+
+li {
+
+text-align: center;
+color: hsl(10,0% 0%)
+
+}
+
+ul {
+
+    text-align: center;
+    color: hsl(10,0% 0%)
+    
+    }
+
+    h2 {
+
+font-weight: bold;
+font-size:20px ;
+text-align: center;
+
+    }
+
+   
