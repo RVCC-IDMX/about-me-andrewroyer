@@ -32,14 +32,24 @@ ul {
 font-weight: bold;
 font-size:20px ;
 text-align: center;
-color:hsl(241, 71%, 43%)
+color:hsl(241, 71%, 43%);
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+
     }
 
    figcaption {
 
 text-indent: 240px;
-color:hsl(241, 71%, 43%)
-
+color:hsl(241, 71%, 43%);
+display:flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+margin-left: 1rem;
 
    }
 
@@ -86,3 +96,37 @@ max-height: auto;
 
 
     }
+
+
+
+    @media screen and (min-width: 60em) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+    figure {
+
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+
+
+
+
+
+    }
+    
