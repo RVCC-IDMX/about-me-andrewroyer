@@ -36,6 +36,7 @@ color:hsl(241, 71%, 43%);
 display: flex; 
 flex-direction: column; 
 align-items: center;
+margin-left: 30px;
 
 
 
@@ -99,24 +100,9 @@ max-height: auto;
 
 
 
-    @media screen and (min-width: 60em) {
+@media screen and (min-width: 60em) {
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
 
 
     figure {
@@ -129,4 +115,14 @@ max-height: auto;
 
 
     }
-    
+    figcaption {
+
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+
+
+    }
+}
