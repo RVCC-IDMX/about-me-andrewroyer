@@ -126,3 +126,56 @@ max-height: auto;
 
     }
 }
+
+#lit div{
+
+    max-width:100%;
+    columns: 40rem;
+    
+
+}
+
+p:first-child::first-letter {
+
+
+float:left;
+font-size: 55px;
+line-height: 80%;
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 70em) {
+
+
+#gallery {
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+
+h2 title{ 
+
+
+    grid-column: 1/-1;
+
+
+
+}
+
+
+
+
+
+
+
+
+}
