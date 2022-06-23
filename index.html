@@ -147,16 +147,18 @@
 <h2> Contact </h2>
 <fieldset>
     <legend> 
-        <form data-netlify="true" name="ContactForm">
+        <form data-netlify="true" name="ContactForm" method="post">
             <label for="Name">Name:</label>
             <input type="text" id="Name" name="Name" required><br> 
             <label for="Email">Email:</label>
             <input type="Email" id="Email" name="Email" required><br>   
             <label for="Phone">Phone:</label>
             <input type="tel" id="Phone" name="Phone"><br>  
-            <textarea rows="5" columns="40"> 
+            <label for="feedback">Feedback:</label>
+            <textarea rows="5" columns="40" id="feedback" name="feedback"> 
 
             </textarea>
+            
             <h2> Follow Up </h2>
             <input type="radio" id="yes" name="follow" value="yes">
             <label for="yes"> Yes </label>
