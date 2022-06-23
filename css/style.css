@@ -179,3 +179,24 @@ h2 title{
 
 
 }
+
+/* Form Formatting */ 
+
+@media screen and(min-width:60em) {
+    form{
+
+
+        
+    }
+
+
+fieldset{ 
+
+
+
+
+}
+
+
+
+}
