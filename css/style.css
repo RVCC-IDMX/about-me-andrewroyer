@@ -1,6 +1,6 @@
 body {
 
-background-color: hsl(325,60%, 60%);
+background-color: rgb(250, 247, 198);
 
 
 
@@ -9,21 +9,23 @@ background-color: hsl(325,60%, 60%);
 p {
 
 
-    color:hsl(241, 71%, 43%)
+    color:hsl(241, 94%, 13%)
 
 }
 
 li {
 
 text-align: center;
-color:hsl(241, 71%, 43%)
+color:hsl(241, 94%, 13%)
+
 
 }
 
 ul {
 
     text-align: center;
-    color:hsl(241, 71%, 43%)
+    color:hsl(241, 94%, 13%)
+
     
     }
 
@@ -32,7 +34,24 @@ ul {
 font-weight: bold;
 font-size:20px ;
 text-align: center;
-color:hsl(241, 71%, 43%);
+color:hsl(241, 94%, 13%);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 display: flex; 
 flex-direction: column; 
 align-items: center;
@@ -42,18 +61,7 @@ margin-left: 30px;
 
     }
 
-   figcaption {
-
-text-indent: 240px;
-color:hsl(241, 71%, 43%);
-display:flex;
-justify-content: center;
-align-items: center;
-font-size: 1rem;
-margin-left: 1rem;
-
-   }
-
+  
    h1 {
 
 
@@ -100,35 +108,33 @@ max-height: auto;
 
 
 
-@media screen and (min-width: 60em) {
-
-
-
-
     figure {
 
-        display:grid;
-        grid-template-columns: 2fr 1fr;
-
-
-
-
-
-    }
-    figcaption {
-
-        display:flex ;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        margin-left: 1rem;
-
-
-    }
-}
+        display: table;
+ 
+ 
+ 
+ 
+ 
+     }
+     img, figcaption {
+ 
+     display: table-cell;
+     vertical-align: bottom;
+         font-size: 14px;
+       
+         
+ 
+     }
+ figcaption{ 
+ 
+ 
+ text-align: left;
+ 
+ }
 
 #lit div{
-
+padding-left: 5px;
     max-width:100%;
     columns: 40rem;
     
@@ -153,26 +159,6 @@ line-height: 80%;
 @media screen and (min-width: 100em) {
 
 
-#gallery {
-
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-
-}
-
-h2 title{ 
-
-
-    grid-column: 1/-1;
-
-
-
-}
-
-
-
 
 
 
@@ -182,20 +168,41 @@ h2 title{
 
 /* Form Formatting */ 
 
-@media screen and(min-width:60em) {
-    form{
+fieldset{
 
-
-        
+    background-color: lightslategray;
+    
+    
+    
+    
     }
 
+.section-wrap{
 
-fieldset{ 
+text-align: center;
+margin-left: 25px;
+}
+
+.arealabel{
 
 
-
+vertical-align: text-top;
 
 }
+
+
+#gallery img {
+
+max-width: 250px;
+  
+
+}
+
+#gallery img:hover {
+
+transform: scale(2);
+transition: .2s;
+transition-delay: 1s;
 
 
 
