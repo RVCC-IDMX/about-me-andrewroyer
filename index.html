@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
     <!--meta data-->
     <!--add fonts and color scheme-->
     <meta charset="UTF-8">
@@ -14,9 +15,24 @@
 <header>
 
     <!--Logo and page title-->
-<img src="img/logo-96X96.svg" alt="blue origami bird.">
-
-<h1>Web Dev 1</h1> 
+<nav class="navbar">
+<div class="logo">
+<img
+src="img/logo-96X96.svg"
+class="log-img"
+alt="blue orogami logo"
+/>
+<h1 class="logo-title">Web Dev 1</h1>
+</div>
+<div class="navbar-links">
+    <ul>
+    <li><a href="#bio" class="nav-links">Bio</a></li>
+    <li><a href="#gallery" class="nav-links">Gallery</a></li>
+    <li><a href="#lit" class="nav-links">Blog</a></li>
+    <li><a href="#contact" class="nav-links">Contact Me</a></li>
+</ul>
+</div>
+</nav>
 
 </header>
 
@@ -45,6 +61,7 @@
 
 <section>
 <!--Bio-->
+<a id="bio"></a>
 <div>
 <h2>Hobbies</h2>
 <ul>
@@ -63,7 +80,7 @@
 
 </section>
 <section>
-
+<a id="gallery"></a>
 <figure id="gallery">
 <h2>Photo Gallery</h2>
 <hr> 
@@ -107,6 +124,7 @@
 </section>
     
 </article>
+<a id="lit"></a>
 <h2> Text </h2>
 
 <div>
@@ -142,7 +160,7 @@
 
 
 
-
+<a id="contact"></a>
 <section id="contact">
 <h2> Contact </h2>
 
