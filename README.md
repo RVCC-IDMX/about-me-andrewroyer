@@ -5,8 +5,8 @@ Andrew Royer
 This is a project for my IDMX-225 class that demonstrates css and reponsive design. 
 
 ## Links
-* [Web Site] (https://about-me-andrewroyer.netlify.app/)
-* [School] https://www.raritanval.edu/
+* [Web Site](https://about-me-andrewroyer.netlify.app/)
+* [School](https://www.raritanval.edu/)
 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/caff4a81-e585-441a-8a3c-76615cf7c6da/deploy-status)](https://app.netlify.com/sites/about-me-andrewroyer/deploys)
@@ -32,9 +32,9 @@ Colors Used
 
 ## Citations
 
-* [Stackoverflow](https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file?answertab=trending#tab-top) For information on creating readme.md]
+* [Stackoverflow](https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file?answertab=trending#tab-top) For information on creating readme.md
 
-* [For colored boxes placeholder.com] (placeholder.com)
+* [For colored boxes placeholder.com](placeholder.com)
 
 ## License
 
