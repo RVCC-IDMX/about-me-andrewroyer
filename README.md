@@ -27,8 +27,16 @@ I chose a light yellow bacckground with a dark color font to provide good contra
 
 
 Colors Used
-* Background rgb(250, 247, 198) hex #faf7c6
-* Text  RGB (3,2,64) hex #030240
-
 - ![#faf7c6](https://via.placeholder.com/15/faf7c6/faf7c6.png) `Background rgb(250, 247, 198) hex #faf7c6`
 - ![#030240](https://via.placeholder.com/15/030240/030240.png) `Text  RGB (3,2,64) hex #030240`
+
+## Citations
+
+* [Stackoverflow](https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file?answertab=trending#tab-top) For information on creating readme.md]
+
+* [For colored boxes placeholder.com] (placeholder.com)
+
+## License
+
+This is code is released under the MIT license
+https://opensource.org/licenses/MIT
