@@ -34,7 +34,7 @@ Colors Used
 
 * [Stackoverflow](https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file?answertab=trending#tab-top) For information on creating readme.md
 
-* [For colored boxes placeholder.com](placeholder.com)
+* [For colored boxes used in the readme placeholder.com](placeholder.com)
 
 ## License
 
