@@ -139,31 +139,54 @@ alt="Logo"
 
 <div>
 
-    <p>As Bradshaw left, the lawyer looked at his watch. “And now, Poole, let us get to ours,” he said; and taking the poker under his arm, led the way into the yard. The scud had banked over the moon, and it was now quite dark. The wind, which only broke in puffs and draughts into that deep well of building, tossed the light of the candle to and fro about their steps, until they came into the shelter of the theatre, where they sat down silently to wait. London hummed solemnly all around; but nearer at hand, the stillness was only broken by the sounds of a footfall moving to and fro along the cabinet floor.</p>
+<p> Image hover effects are a way to make your site more dynamic and visually interesting. They can allow you to present a larger number of images on a page by creating a gallery that allows the user to get a closer look without having to leave the page. Image hover effects also give you the opportunity to present other information about the image in a dynamic way by overlaying another image. </p>
 
-    <p>“So it will walk all day, sir,” whispered Poole; “ay, and the better part of the night. Only when a new sample comes from the chemist, there’s a bit of a break. Ah, it’s an ill conscience that’s such an enemy to rest! Ah, sir, there’s blood foully shed in every step of it! But hark again, a little closer--put your heart in your ears, Mr. Utterson, and tell me, is that the doctor’s foot?”</p>
+<p> The images below represent a gallery where we want to preview the image and the user can hover over the image. The two main factors you can control are the delay before the hover effect takes place and it switches to the larger image and how large the image becomes. You need to take into account your use case for the timing. When deciding how large the image is you should make sure that when you hover over the image it won’t interfere with the other images on the page. There are other ways to alter the way the hover effect functions, but these are the main two parameters you should focus on. </p>
+
+<p>First we create the gallery with the code below </p>
+<code>
+    &lt;figure id="resizegallery"&gt;
+    &lt;h2&gt;Flowers&lt;/h2&gt;
+    &lt;hr&gt; 
+    &lt;figure id="flower1"&gt; 
+    &lt;img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Flower-flyOnFlower2.jpg" alt="Sample Flower 1"&gt;
+    &lt;figcaption&gt;Flower 1&lt;/figcaption&gt;
+    &lt;/figure&gt;
     
-    <p>The steps fell lightly and oddly, with a certain swing, for all they went so slowly; it was different indeed from the heavy creaking tread of Henry Jekyll. Utterson sighed. “Is there never anything else?” he asked.</p>
+    &lt;figure id="flower2"&gt;
+    &lt;img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Flower_full_bloom.jpg" alt="Sample Flower 2"&gt;
+    &lt;figcaption&gt;Flower 2&lt;/figcaption&gt;
+    &lt;/figure&gt;
     
-    <p>Poole nodded. “Once,” he said. “Once I heard it weeping!”</p>
+    &lt;figure id="flower3" &gt;
+    &lt;img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Solanum_trilobatum_flowers.JPG" alt="Sample Flower 3"&gt;
+    &lt;figcaption&gt;Flower 3&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+</code>
+<figure id="resizegallery">
+    <h2>Flowers</h2>
+    <hr> 
+    <figure id="flower1"> 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Flower-flyOnFlower2.jpg" alt="Sample Flower 1">
+    <figcaption>Flower 1</figcaption>
+    </figure>
     
-    <p>“Weeping? how that?” said the lawyer, conscious of a sudden chill of horror.</p>
+    <figure id="flower2">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Flower_full_bloom.jpg" alt="Sample Flower 2">
+    <figcaption>Flower 2</figcaption>
+    </figure>
     
-    <p>“Weeping like a woman or a lost soul,” said the butler. “I came away with that upon my heart, that I could have wept too.”</p>
+    <figure id="flower3" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Solanum_trilobatum_flowers.JPG" alt="Sample Flower 3">
+    <figcaption>Flower 3</figcaption>
+    </figure>
     
-    <p>But now the ten minutes drew to an end. Poole disinterred the axe from under a stack of packing straw; the candle was set upon the nearest table to light them to the attack; and they drew near with bated breath to where that patient foot was still going up and down, up and down, in the quiet of the night. “Jekyll,” cried Utterson, with a loud voice, “I demand to see you.” He paused a moment, but there came no reply. “I give you fair warning, our suspicions are aroused, and I must and shall see you,” he resumed; “if not by fair means, then by foul--if not of your consent, then by brute force!”</p>
-    
-    <p>“Utterson,” said the voice, “for God’s sake, have mercy!”</p>
-    
-    <p>“Ah, that’s not Jekyll’s voice--it’s Hyde’s!” cried Utterson. “Down with the door, Poole!”</p>
-    
-    <p>Poole swung the axe over his shoulder; the blow shook the building, and the red baize door leaped against the lock and hinges. A dismal screech, as of mere animal terror, rang from the cabinet. Up went the axe again, and again the panels crashed and the frame bounded; four times the blow fell; but the wood was tough and the fittings were of excellent workmanship; and it was not until the fifth, that the lock burst and the wreck of the door fell inwards on the carpet.</p>
-    
-    <p>The besiegers, appalled by their own riot and the stillness that had succeeded, stood back a little and peered in. There lay the cabinet before their eyes in the quiet lamplight, a good fire glowing and chattering on the hearth, the kettle singing its thin strain, a drawer or two open, papers neatly set forth on the business table, and nearer the fire, the things laid out for tea; the quietest room, you would have said, and, but for the glazed presses full of chemicals, the most commonplace that night in London.</p>
-    
-    <p>Right in the middle there lay the body of a man sorely contorted and still twitching. They drew near on tiptoe, turned it on its back and beheld the face of Edward Hyde. He was dressed in clothes far too large for him, clothes of the doctor’s bigness; the cords of his face still moved with a semblance of life, but life was quite gone: and by the crushed phial in the hand and the strong smell of kernels that hung upon the air, Utterson knew that he was looking on the body of a self-destroyer.</p>
-    
-    <p>“We have come too late,” he said sternly, “whether to save or punish. Hyde is gone to his account; and it only remains for us to find the body of your master.”</p>
+
+<p> Another way you can use hover effects to present more information is by using an overlay, the easiest way to do this is by having images that overlap each other and change the opacity. When the webpage is loaded the opacity will be set to zero and when the user hovers over the image the opacity will be set to one. This can be used in a case where you had a car dealership website when the user hovers over it can show the price of the car. </p>
+
+<p> You can use hover effects to put a frame around an image. On touchscreen devices sometimes its hard to tell what you are selecting, by adding a frame you can illustrate what the user is selecting. The frame doesn’t take up much space so it’s useful on smaller screens. </p> 
+
 </div>
 
 
