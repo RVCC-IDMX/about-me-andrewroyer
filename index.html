@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hamburger.css">
     <!--meta data-->
     <!--add fonts and color scheme-->
     <meta charset="UTF-8">
@@ -16,7 +17,17 @@
 <header>
 
     <!--Logo and page title-->
-<nav class="navbar">
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<nav class="navbar" >
+    <nav>
+        <ul>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#lit">Blog</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+
 <div class="logo">
 <img
 src="img/favicon.svg"
@@ -25,6 +36,7 @@ alt="Logo"
 />
 <h1 class="logo-title">Web Dev 1</h1>
 </div>
+
 <div class="navbar-links">
     <ul>
     <li><a href="#bio" class="nav-links">Bio</a></li>
@@ -33,8 +45,11 @@ alt="Logo"
     <li><a href="#contact" class="nav-links">Contact Me</a></li>
 </ul>
 </div>
-</nav>
 
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+</label>
 </header>
 
 <main>
@@ -46,40 +61,40 @@ alt="Logo"
 
 <img src="img/avataaars.png" alt="this is a avatar picture of me.">
 <div>
-
+<a id="bio"></a>
 <p>Andrew Royer</p>
 <p>North Plainfield</p>
 <p>I want to be...</p>
 <p>Successful and make the people around me happy</p>
-    
-    
- 
-
-
 </div>
 
 </section>
 
 <section>
 <!--Bio-->
-<a id="bio"></a>
+
+<p> 
+    I was born in New Jersey where I was raised by my mother.  I always had a connection to animals, especially cats.  Ever since I was born, we always have had at least one cat wherever I lived.    I also have enjoyed technology and video games.  I started playing driving games around three years old.  This has led to my interest in cars.</p>
+
+    <p>I have faced a lot of challenges in my life but, have managed to overcome them.  I still face new challenges daily and often things that come easy to most people are a challenge.   I attended two different high schools before graduating and attending Raritan Valley Community College.  Normally I do well in Math, Science and technology classes.  The transition to college was made more difficult with COVID in addition to other issues I must deal with.  I am still determining my final major and what I want to do as a career.
+</p>
+
 <div>
 <h2>Hobbies</h2>
 <ul>
-    <li>I enjoy watching anime</li>
-    <li>I enjoy playing vido games</li>
-    <li>I spend way to much time lurking on social media</li>
-    <li>I have 3 cats</li>
-    <li>I love to travel</li>
-    <li>I am a foodie</li>
-    
+    <li>I enjoy watching anime.</li>
+    <li>I enjoy playing video games. Some of my favorites are Forza Horizon, The Crew 2, Gran Turismo, The Sims.</li>
+    <li>I spend way to much time lurking on social media.</li>
+    <li>I have 4 cats. I would list the names but I don't want to risk my security questions. </li>
+    <li>I love to travel. I have been to Canada and most of the states on the East coast.</li>
+    <li>I am a foodie. I am a huge fan of Thai food, sous vide steak cooked to 145 degrees for 3 hours(not that I am picky about it), and buffalo chicken pizza.</li>
+    <li>I am a huge car person. I have always liked cars since I was young and love to go to auto shows.</li>
 </ul>
-
+<h2>Picture of Me</h2>
+<img src="img/face.png" alt="My Face" class="rotate"> 
 </div>
-
-
-
 </section>
+
 <section>
 <a id="gallery"></a>
 <figure id="gallery">
@@ -99,67 +114,151 @@ alt="Logo"
 <img src="img/cat3-640w.png" alt="this is my orange tabby cat">
 <figcaption>This is my orange cat</figcaption>
 </figure>
-
-
 </figure>
 </figure>
-
-
-
-
 </section>
 <article>
-
 
 <section id="video">
 
 <h2>Vidyo</h2>
 <iframe width="600" height="330" src="https://www.youtube.com/embed/osYvhCmOFj0" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-
-
-
-
-</section>
-    
+</section>   
 </article>
 <a id="lit"></a>
-<h2> Text </h2>
-
+<h2> Blog </h2>
 <div>
+<p> Image hover effects are a way to make your site more dynamic and visually interesting. They can allow you to present a larger number of images on a page by creating a gallery that allows the user to get a closer look without having to leave the page. Image hover effects also give you the opportunity to present other information about the image in a dynamic way by overlaying another image. </p>
+<p> The images below represent a gallery where we want to preview the image and the user can hover over the image. The two main factors you can control are the delay before the hover effect takes place and it switches to the larger image and how large the image becomes. You need to take into account your use case for the timing. When deciding how large the image is you should make sure that when you hover over the image it won’t interfere with the other images on the page. There are other ways to alter the way the hover effect functions, but these are the main two parameters you should focus on. </p>
+<p>First we create the gallery with the code below: </p>
+<pre>
+    <code>
+    &lt;figure id="resizegallery"&gt;
+    &lt;h2&gt;Flowers&lt;/h2&gt;
+    &lt;hr&gt; 
+    &lt;figure id="flower1"&gt; 
+    &lt;img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Flower-flyOnFlower2.jpg" alt="Sample Flower 1"&gt;
+    &lt;figcaption&gt;Flower 1&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    
+    &lt;figure id="flower2"&gt;
+    &lt;img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Lavender_field_in_bloom.jpg" alt="Sample Flower 2"&gt;
+    &lt;figcaption&gt;Flower 2&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    
+    &lt;figure id="flower3" &gt;
+    &lt;img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Echinopsis_oxygona_flowers_bloom_02.jpg" alt="Sample Flower 3"&gt;
+    &lt;figcaption&gt;Flower 3&lt;/figcaption&gt;
+    &lt;/figure&gt;
+</code>
+</pre>
+<p>We need to make sure the gallery images are all the same size. We do this in the CSS file:  </p>
+<pre> 
+<code> 
+    #resizegallery img {
+        max-width: 250px;       
+        }
+</code>
 
-    <p>As Bradshaw left, the lawyer looked at his watch. “And now, Poole, let us get to ours,” he said; and taking the poker under his arm, led the way into the yard. The scud had banked over the moon, and it was now quite dark. The wind, which only broke in puffs and draughts into that deep well of building, tossed the light of the candle to and fro about their steps, until they came into the shelter of the theatre, where they sat down silently to wait. London hummed solemnly all around; but nearer at hand, the stillness was only broken by the sounds of a footfall moving to and fro along the cabinet floor.</p>
+</pre>
+<p>Now we add the hover effect. this is also done in the CSS </p>
+<pre> 
+<code>
+    #resizegallery img:hover {
+    transform: scale(2);
+    transition: .5s;
+    transition-delay: 0.2s;
+    }
+</code>
 
-    <p>“So it will walk all day, sir,” whispered Poole; “ay, and the better part of the night. Only when a new sample comes from the chemist, there’s a bit of a break. Ah, it’s an ill conscience that’s such an enemy to rest! Ah, sir, there’s blood foully shed in every step of it! But hark again, a little closer--put your heart in your ears, Mr. Utterson, and tell me, is that the doctor’s foot?”</p>
+</pre>
+<p>We are setting three values for the resizing. The first one is the scale for the transform, two means the image doubles in size. Transition is how long it's going to take to grow to the larger size. If you don't supply this value it goes immediately after the transition is triggered. Transition-delay is how long the user has to hover over the image to trigger the transition. This is an optional value and if you don't supply it the effect happens as soon as you start hovering over the image.</p>
+<figure id="resizegallery">
+    <h2>Flowers</h2>
+    <hr> 
+    <figure id="flower1"> 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Flower-flyOnFlower2.jpg" alt="Sample Flower 1">
+    <figcaption>Flower 1</figcaption>
+    </figure>
     
-    <p>The steps fell lightly and oddly, with a certain swing, for all they went so slowly; it was different indeed from the heavy creaking tread of Henry Jekyll. Utterson sighed. “Is there never anything else?” he asked.</p>
+    <figure id="flower2">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Lavender_field_in_bloom.jpg" alt="Sample Flower 2">
+    <figcaption>Flower 2</figcaption>
+    </figure>
     
-    <p>Poole nodded. “Once,” he said. “Once I heard it weeping!”</p>
+    <figure id="flower3" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Echinopsis_oxygona_flowers_bloom_02.jpg" alt="Sample Flower 3">
+    <figcaption>Flower 3</figcaption>
+    </figure>
+</figure>
+
+<p> Another way you can use hover effects to present more information is by using an overlay, the easiest way to do this is by having images or text that overlap each other and change the opacity. When the webpage is loaded the opacity will be set to zero and when the user hovers over the image the opacity will be set to one. This can be used in a case where you had a car dealership website when the user hovers over it can show the price of the car. </p>
+
+<p>The first thing you need to do is put the image on the page and we are going to wrap in div tags and apply properties to those classes. </p>
+<pre>
+    <code>
+        &lt;div class="container"&gt;
+        &lt;img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Speedex_750_race_car.jpg" alt="Speedex 750 race car" class="image" style="width:100%;" &gt;
+        &lt;div class="middle"&gt;
+        &lt;div class="text"&gt;Speedex 750&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
     
-    <p>“Weeping? how that?” said the lawyer, conscious of a sudden chill of horror.</p>
-    
-    <p>“Weeping like a woman or a lost soul,” said the butler. “I came away with that upon my heart, that I could have wept too.”</p>
-    
-    <p>But now the ten minutes drew to an end. Poole disinterred the axe from under a stack of packing straw; the candle was set upon the nearest table to light them to the attack; and they drew near with bated breath to where that patient foot was still going up and down, up and down, in the quiet of the night. “Jekyll,” cried Utterson, with a loud voice, “I demand to see you.” He paused a moment, but there came no reply. “I give you fair warning, our suspicions are aroused, and I must and shall see you,” he resumed; “if not by fair means, then by foul--if not of your consent, then by brute force!”</p>
-    
-    <p>“Utterson,” said the voice, “for God’s sake, have mercy!”</p>
-    
-    <p>“Ah, that’s not Jekyll’s voice--it’s Hyde’s!” cried Utterson. “Down with the door, Poole!”</p>
-    
-    <p>Poole swung the axe over his shoulder; the blow shook the building, and the red baize door leaped against the lock and hinges. A dismal screech, as of mere animal terror, rang from the cabinet. Up went the axe again, and again the panels crashed and the frame bounded; four times the blow fell; but the wood was tough and the fittings were of excellent workmanship; and it was not until the fifth, that the lock burst and the wreck of the door fell inwards on the carpet.</p>
-    
-    <p>The besiegers, appalled by their own riot and the stillness that had succeeded, stood back a little and peered in. There lay the cabinet before their eyes in the quiet lamplight, a good fire glowing and chattering on the hearth, the kettle singing its thin strain, a drawer or two open, papers neatly set forth on the business table, and nearer the fire, the things laid out for tea; the quietest room, you would have said, and, but for the glazed presses full of chemicals, the most commonplace that night in London.</p>
-    
-    <p>Right in the middle there lay the body of a man sorely contorted and still twitching. They drew near on tiptoe, turned it on its back and beheld the face of Edward Hyde. He was dressed in clothes far too large for him, clothes of the doctor’s bigness; the cords of his face still moved with a semblance of life, but life was quite gone: and by the crushed phial in the hand and the strong smell of kernels that hung upon the air, Utterson knew that he was looking on the body of a self-destroyer.</p>
-    
-    <p>“We have come too late,” he said sternly, “whether to save or punish. Hyde is gone to his account; and it only remains for us to find the body of your master.”</p>
+    </code>
+</pre>
+<p>This would show the image and the text would show up below the image. Now we are going to add the parts that will make it so you don't see the text when the page loads and when it shows up it will be on top on the image.</p>
+<pre>
+<code>
+    .container {
+        position: relative;
+        width: 50%;
+      }
+      
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .container:hover .image {
+        opacity: 0.9;
+      }
+      
+      .container:hover .middle {
+        opacity: 1;
+      }
+      
+      .text {
+        background-color: #000;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+</code>
+</pre>
+<p>The key elements are we set image opacity to one so it will show up. The .middle class is used for the text so we set it initally to zero so you can't see it. We also set some varibles such as top and left so we can control where it will show up when it appears. The .container:hover .image controls what happens to the image when it is hovered over, we set it to have an opacity of 0.9 so it will have a subtle effect and the user can still see the image. The .container:hover .middle is what we use to get the text to show up by setting the opacity to one. I played with the top value for the text and moved it closer to the bottom as it looked better that way. Try it for yourself by hovering over the image below.</p>
+
+<div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Speedex_750_race_car.jpg" alt="Speedex 750 race car" class="image" style="width:100%;" >
+    <div class="middle">
+    <div class="text">Speedex 750</div>
+    </div>
 </div>
-
-
-
-
+</div>
 
 <a id="contact"></a>
 <section id="contact">
